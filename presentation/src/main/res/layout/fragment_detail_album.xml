@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.example.andreii.mysuperarchitecturealbum.presentation.screen.album.detail.AlbumDetailsViewModel">
+
+        </variable>
+    </data>
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#f5000008">
+
+
+            <ImageView
+                android:id="@+id/album_Detail_ImageUrl"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@mipmap/ic_launcher"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:url="@{viewModel.albumImageUrl}"
+                tools:ignore="MissingConstraints" />
+
+
+            <TextView
+                android:id="@+id/textView_Detail_Name"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:background="#ec0b0b"
+                android:gravity="center"
+                android:text="@{viewModel.albumName}"
+                android:textColor="#060200"
+                android:textSize="22dp"
+                app:layout_constraintStart_toEndOf="@+id/album_Detail_ImageUrl"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/textView_Detail_Year"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:background="#060200"
+                android:gravity="center"
+                android:text="@{viewModel.albumYear}"
+                android:textColor="#ec0b0b"
+                android:textSize="22dp"
+                app:layout_constraintStart_toEndOf="@+id/album_Detail_ImageUrl"
+                app:layout_constraintTop_toBottomOf="@+id/textView_Detail_Name"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="200dp"
+                android:layout_height="21dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:text="TrackList :"
+                android:textColor="#ec0b0b"
+                android:textSize="20sp"
+                app:layout_constraintStart_toEndOf="@+id/album_Detail_ImageUrl"
+                app:layout_constraintTop_toBottomOf="@+id/textView_Detail_Year"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="301dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="184dp"
+                android:text="@{viewModel.tracklist}"
+                android:textColor="#ec0b0b"
+                app:layout_constraintStart_toEndOf="@+id/album_Detail_ImageUrl"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="MissingConstraints" />
+
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>
+
+
+</layout><!--android:id="@+id/albumdetailYear"--><!--android:id="@+id/albumdetailName"-->

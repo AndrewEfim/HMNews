@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.example.andreii.mysuperarchitecturealbum.presentation.screen.news.news.MyNewsAdapter" />
+    </data>
+
+
+    <LinearLayout
+        android:id="@+id/item_id_news"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="#d80a0000"
+        android:padding="2dp">
+
+        <ImageView
+            android:background="#4d4e4f"
+            android:id="@+id/imageNewsItem"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            />
+
+            <TextView
+                android:id="@+id/mainTitleNewsItem"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginLeft="2dp"
+                android:background="#4d4e4f"
+                android:gravity="left"
+                android:paddingLeft="5dp"
+                android:text="Main Title"
+                android:textColor="#f9f2f2"
+                android:textSize="15sp" />
+
+
+    </LinearLayout>
+</layout>

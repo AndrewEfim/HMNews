@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.example.andreii.mysuperarchitecturealbum.presentation.screen.album.MyAlbumAdapter" />
+    </data>
+
+
+    <LinearLayout
+        android:id="@+id/item_id"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="#160b0b"
+        android:padding="2dp">
+
+        <ImageView
+            android:background="#111111"
+            android:id="@+id/imageAlbumItem"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="#160b0b"
+            android:padding="1dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/nameAlbumItem"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#444546"
+                android:textColor="#ec0b0b"
+                android:layout_marginLeft="2dp"
+                android:text="Name"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/yearAlbumItem"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#444546"
+                android:textColor="#e5ec0b0b"
+                android:layout_marginLeft="2dp"
+                android:text="Year"
+                android:textSize="25sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+</layout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout>
+    <data>
+        <variable
+            name="viewModel"
+            type="com.example.andreii.mysuperarchitecturealbum.presentation.screen.band.band.MyBandAdapter"/>
+
+    </data>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="55dp">
+
+        <TextView
+            android:id="@+id/bandName_Bands_Item"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#292828"
+            android:padding="5dp"
+            android:textColor="#ec050d"
+            android:textSize="20sp"
+
+            />
+
+    </LinearLayout>
+
+    </layout>
