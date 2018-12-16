@@ -3,14 +3,12 @@ apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-kapt'
 
 android {
-    compileSdkVersion 28
+    compileSdkVersion rootProject.compileSdkVersion
 
     defaultConfig {
-        minSdkVersion 17
-        targetSdkVersion 28
-        versionCode 1
-        versionName "1.0"
-        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        minSdkVersion rootProject.minSdkVersion
+        targetSdkVersion rootProject.targetSdkVersion
+
     }
 
     buildTypes {
@@ -39,13 +37,6 @@ dependencies {
     api "android.arch.persistence.room:runtime:$room_version"
     kapt "android.arch.persistence.room:compiler:$room_version"
     implementation "android.arch.persistence.room:rxjava2:$room_version"
-//    implementation "android.arch.lifecycle:extensions:1.1.1"
-  //  annotationProcessor "android.arch.lifecycle:compiler:1.1.1"
-
-    //implementation "android.arch.persistence.room:runtime:$room_version"
-    // annotationProcessor "android.arch.persistence.room:compiler:$room_version"
-    //kapt "android.arch.persistence.room:compiler:$room_version"
-    //implementation "android.arch.persistence.room:rxjava2:$room_version"
 
 
 }
