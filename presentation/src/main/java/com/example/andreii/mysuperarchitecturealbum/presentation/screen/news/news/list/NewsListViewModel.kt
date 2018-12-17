@@ -3,11 +3,11 @@ package com.example.andreii.mysuperarchitecturealbum.presentation.screen.news.ne
 import android.util.Log
 import com.example.andreii.mysuperarchitecturealbum.presentation.base.BaseViewModel
 import com.example.andreii.mysuperarchitecturealbum.presentation.fucturies.UseCaseProvider
-import com.example.andreii.mysuperarchitecturealbum.presentation.screen.AlbumRouter
+import com.example.andreii.mysuperarchitecturealbum.presentation.screen.ApplicationMainRouter
 import com.example.andreii.mysuperarchitecturealbum.presentation.screen.news.news.MyNewsAdapter
 import io.reactivex.rxkotlin.subscribeBy
 
-class NewsListViewModel : BaseViewModel<AlbumRouter>() {
+class NewsListViewModel : BaseViewModel<ApplicationMainRouter>() {
     private val TAG : String = "myLog"
 
     private val newsListUseCase = UseCaseProvider.provideNewsListUseCase()

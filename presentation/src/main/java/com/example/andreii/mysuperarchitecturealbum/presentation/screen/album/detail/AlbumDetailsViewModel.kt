@@ -4,11 +4,11 @@ import android.databinding.ObservableField
 import android.util.Log
 import com.example.andreii.mysuperarchitecturealbum.presentation.base.BaseViewModel
 import com.example.andreii.mysuperarchitecturealbum.presentation.fucturies.UseCaseProvider
-import com.example.andreii.mysuperarchitecturealbum.presentation.screen.AlbumRouter
+import com.example.andreii.mysuperarchitecturealbum.presentation.screen.ApplicationMainRouter
 import io.reactivex.rxkotlin.subscribeBy
 
 
-class AlbumDetailsViewModel : BaseViewModel<AlbumRouter>() {
+class AlbumDetailsViewModel : BaseViewModel<ApplicationMainRouter>() {
     private val TAG: String = "myLog"
     private val albumIdUseCase = UseCaseProvider.providerAlbumIdUseCase()
     private var albumId: String? = null

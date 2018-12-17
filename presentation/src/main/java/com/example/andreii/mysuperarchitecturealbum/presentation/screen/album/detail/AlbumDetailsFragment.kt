@@ -7,10 +7,10 @@ import android.view.View
 import com.example.andreii.mysuperarchitecturealbum.R
 import com.example.andreii.mysuperarchitecturealbum.databinding.FragmentDetailAlbumBinding
 import com.example.andreii.mysuperarchitecturealbum.presentation.base.BaseMvvmFragment
-import com.example.andreii.mysuperarchitecturealbum.presentation.screen.AlbumRouter
+import com.example.andreii.mysuperarchitecturealbum.presentation.screen.ApplicationMainRouter
 
 class AlbumDetailsFragment : BaseMvvmFragment<AlbumDetailsViewModel
-        , AlbumRouter, FragmentDetailAlbumBinding>() {
+        , ApplicationMainRouter, FragmentDetailAlbumBinding>() {
 
     private val TAG: String = "myLog"
 

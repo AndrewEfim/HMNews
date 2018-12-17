@@ -10,14 +10,14 @@ import com.example.andreii.mysuperarchitecturealbum.R
 
 import com.example.andreii.mysuperarchitecturealbum.databinding.FragmentListAlbumBinding
 import com.example.andreii.mysuperarchitecturealbum.presentation.base.BaseMvvmFragment
-import com.example.andreii.mysuperarchitecturealbum.presentation.screen.AlbumRouter
+import com.example.andreii.mysuperarchitecturealbum.presentation.screen.ApplicationMainRouter
 import com.jakewharton.rxbinding2.widget.RxTextView
 import io.reactivex.rxkotlin.subscribeBy
 import kotlinx.android.synthetic.main.fragment_list_album.view.*
 
 class AlbumListFragment : BaseMvvmFragment<
         AlbumListViewModel
-        , AlbumRouter
+        , ApplicationMainRouter
         , FragmentListAlbumBinding>() {
 
     val TAG: String = "myLog"

@@ -8,9 +8,9 @@ import android.view.View
 import com.example.andreii.mysuperarchitecturealbum.R
 import com.example.andreii.mysuperarchitecturealbum.databinding.FragmentBandsListBinding
 import com.example.andreii.mysuperarchitecturealbum.presentation.base.BaseMvvmFragment
-import com.example.andreii.mysuperarchitecturealbum.presentation.screen.AlbumRouter
+import com.example.andreii.mysuperarchitecturealbum.presentation.screen.ApplicationMainRouter
 
-class BandsListFragment : BaseMvvmFragment<BandsListViewModel, AlbumRouter, FragmentBandsListBinding>() {
+class BandsListFragment : BaseMvvmFragment<BandsListViewModel, ApplicationMainRouter, FragmentBandsListBinding>() {
     private val TAG : String = "myLog"
     companion object {
         fun getInstance(): BandsListFragment {

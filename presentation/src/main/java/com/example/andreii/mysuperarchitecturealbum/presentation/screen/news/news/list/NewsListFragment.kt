@@ -7,9 +7,9 @@ import android.view.View
 import com.example.andreii.mysuperarchitecturealbum.R
 import com.example.andreii.mysuperarchitecturealbum.databinding.FragmentListNewsBinding
 import com.example.andreii.mysuperarchitecturealbum.presentation.base.BaseMvvmFragment
-import com.example.andreii.mysuperarchitecturealbum.presentation.screen.AlbumRouter
+import com.example.andreii.mysuperarchitecturealbum.presentation.screen.ApplicationMainRouter
 
-class NewsListFragment : BaseMvvmFragment<NewsListViewModel, AlbumRouter, FragmentListNewsBinding>() {
+class NewsListFragment : BaseMvvmFragment<NewsListViewModel, ApplicationMainRouter, FragmentListNewsBinding>() {
 
 
     companion object {

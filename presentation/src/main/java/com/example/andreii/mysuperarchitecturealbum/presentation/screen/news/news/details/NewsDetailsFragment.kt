@@ -7,9 +7,9 @@ import android.view.View
 import com.example.andreii.mysuperarchitecturealbum.R
 import com.example.andreii.mysuperarchitecturealbum.databinding.FragmentDetailNewsBinding
 import com.example.andreii.mysuperarchitecturealbum.presentation.base.BaseMvvmFragment
-import com.example.andreii.mysuperarchitecturealbum.presentation.screen.AlbumRouter
+import com.example.andreii.mysuperarchitecturealbum.presentation.screen.ApplicationMainRouter
 
-class NewsDetailsFragment : BaseMvvmFragment<NewsDetailsViewModel, AlbumRouter, FragmentDetailNewsBinding>() {
+class NewsDetailsFragment : BaseMvvmFragment<NewsDetailsViewModel, ApplicationMainRouter, FragmentDetailNewsBinding>() {
     private val TAG : String = "myLog"
 
     companion object {

@@ -3,10 +3,10 @@ package com.example.andreii.mysuperarchitecturealbum.presentation.screen.band.ba
 import android.util.Log
 import com.example.andreii.mysuperarchitecturealbum.presentation.base.BaseViewModel
 import com.example.andreii.mysuperarchitecturealbum.presentation.fucturies.UseCaseProvider
-import com.example.andreii.mysuperarchitecturealbum.presentation.screen.AlbumRouter
+import com.example.andreii.mysuperarchitecturealbum.presentation.screen.ApplicationMainRouter
 import io.reactivex.rxkotlin.subscribeBy
 
-class BandsListViewModel : BaseViewModel<AlbumRouter>() {
+class BandsListViewModel : BaseViewModel<ApplicationMainRouter>() {
     private val TAG : String = "myLog"
     private val bandsListUseCase = UseCaseProvider.provideBandsListUseCase()
     var myBandsAdapter: MyBandAdapter = MyBandAdapter()

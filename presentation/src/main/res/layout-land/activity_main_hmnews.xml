@@ -37,19 +37,17 @@
             android:orientation="horizontal">
             <Button
                 android:id="@+id/button_News_hmnews"
-                android:background="#e40808"
+                android:background="@color/buttonBackground"
                 android:layout_height="match_parent"
                 android:layout_width="match_parent"
                 android:layout_weight="1"
-
-                android:text="NEWS"
+                android:text="@string/buttonNews"
                 />
             <Button
                 android:id="@+id/button_Bands_hmnews"
-                android:background="#e40808"
+                android:background="@color/buttonBackground"
                 android:layout_weight="1"
-                android:text="BANDS"
-
+                android:text="@string/buttonBands"
                 android:layout_height="match_parent"
                 android:layout_width="match_parent"/>
         </LinearLayout>
@@ -60,6 +58,6 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight="1"
-        android:background="#000000" />
+        android:background="@drawable/heavy_metal_news_v1" />
     </LinearLayout>
 </layout>

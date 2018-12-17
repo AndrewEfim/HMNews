@@ -3,14 +3,14 @@ package com.example.andreii.mysuperarchitecturealbum.presentation.screen.album.l
 import android.util.Log
 import com.example.andreii.mysuperarchitecturealbum.presentation.base.BaseViewModel
 import com.example.andreii.mysuperarchitecturealbum.presentation.fucturies.UseCaseProvider
-import com.example.andreii.mysuperarchitecturealbum.presentation.screen.AlbumRouter
+import com.example.andreii.mysuperarchitecturealbum.presentation.screen.ApplicationMainRouter
 import com.example.andreii.mysuperarchitecturealbum.presentation.screen.album.MyAlbumAdapter
 import com.example.domain.entity.AlbumSearchByName
 import com.example.domain.entity.AlbumsSearch
 import io.reactivex.rxkotlin.subscribeBy
 
 
-class AlbumListViewModel : BaseViewModel<AlbumRouter>() {
+class AlbumListViewModel : BaseViewModel<ApplicationMainRouter>() {
     val TAG: String = "myLogALVM"
     private val searchAlbumsUseCase = UseCaseProvider.provideAlbumSearchUseCase()
     private val albumSearchByNmaeUseCase = UseCaseProvider.provideAlbumSerchByNameUseCase()

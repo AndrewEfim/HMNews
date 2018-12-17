@@ -1,4 +1,4 @@
-package com.example.andreii.mysuperarchitecturealbum.presentation.screen.album
+package com.example.andreii.mysuperarchitecturealbum.presentation.screen
 
 import android.arch.lifecycle.ViewModelProviders
 import android.os.Bundle
@@ -6,16 +6,13 @@ import android.view.View
 import android.view.WindowManager
 import android.widget.Button
 import com.example.andreii.mysuperarchitecturealbum.R
-import com.example.andreii.mysuperarchitecturealbum.databinding.ActivityMainAlbumBinding
-
+import com.example.andreii.mysuperarchitecturealbum.databinding.ActivityMainHmnewsBinding
 import com.example.andreii.mysuperarchitecturealbum.presentation.base.BaseMvvmActivity
-import com.example.andreii.mysuperarchitecturealbum.presentation.screen.AlbumRouter
-import com.example.andreii.mysuperarchitecturealbum.presentation.screen.AlbumViewModel
 
-class AlbumActivity : BaseMvvmActivity<
+class ApplicationMainActivity : BaseMvvmActivity<
         AlbumViewModel
-        , AlbumRouter
-        , ActivityMainAlbumBinding>() {
+        , ApplicationMainRouter
+        , ActivityMainHmnewsBinding>() {
 
 
     override fun provideViewModel(): AlbumViewModel {
@@ -23,11 +20,11 @@ class AlbumActivity : BaseMvvmActivity<
 
     }
 
-    override fun provideRouter(): AlbumRouter {
-        return AlbumRouter(this)
+    override fun provideRouter(): ApplicationMainRouter {
+        return ApplicationMainRouter(this)
     }
 
-    override fun provideLayourId(): Int = R.layout.activity_main_hmnews//R.layout.activity_main_album
+    override fun provideLayourId(): Int = R.layout.activity_main_hmnews
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

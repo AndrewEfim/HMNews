@@ -1,42 +1,48 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:background="#060000"
-    android:layout_height="match_parent"
-    android:orientation="vertical">
-
-    <FrameLayout
-        android:id="@+id/fragmentContainer"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_margin="1dp"
-        android:layout_weight="1"
-        android:background= "#111111"/>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.con/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable
+            name="viewModel"
+            type="com.example.andreii.mysuperarchitecturealbum.presentation.screen.AlbumViewModel"/>
+    </data>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_weight="10"
-        android:background="#600808"
-        android:orientation="horizontal">
+        android:layout_weight="2"
+        android:orientation="vertical">
 
-        <Button
-
-            android:background="@color/buttonBackground"
-            android:layout_height="match_parent"
+        <FrameLayout
+            android:id="@+id/fragmentContainer"
             android:layout_width="match_parent"
-            android:layout_weight="1"
-            />
-
-        <Button
-            android:background="@color/buttonBackground"
-            android:layout_weight="1"
             android:layout_height="match_parent"
-            android:layout_width="match_parent"/>
+            android:layout_weight="2"
+            android:background="#595454" />
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="10"
+            android:background="#e77373"
+            android:orientation="horizontal">
 
+            <Button
+                android:id="@+id/button_News_hmnews"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/buttonBackground"
+                android:text="@string/buttonNews" />
 
+            <Button
+                android:id="@+id/button_Bands_hmnews"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/buttonBackground"
+                android:text="@string/buttonBands" />
+        </LinearLayout>
     </LinearLayout>
-
-
-</LinearLayout>
+</layout>

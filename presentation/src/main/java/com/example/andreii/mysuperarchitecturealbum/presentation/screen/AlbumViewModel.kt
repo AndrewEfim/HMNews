@@ -3,7 +3,7 @@ package com.example.andreii.mysuperarchitecturealbum.presentation.screen
 import android.util.Log
 import com.example.andreii.mysuperarchitecturealbum.presentation.base.BaseViewModel
 
-class AlbumViewModel : BaseViewModel<AlbumRouter>() {
+class AlbumViewModel : BaseViewModel<ApplicationMainRouter>() {
     private val TAG : String = "myLog"
 
     fun goToNewsList() {
